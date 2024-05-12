@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가격 비교 사이트</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: rgba(253, 253, 253, 0.63);
+        }
+
+        .title {
+            width: 314px;
+            height: 78px;
+            position: absolute;
+            left: 43%;
+            top: 38%;
+            color: black;
+            font-size: 48px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+        }
+
+        .search-box {
+            width: 75%;
+            height: 8%;
+            position: absolute;
+            left: 12%;
+            top: 45%;
+            background: #D9D9D9;
+            border-radius: 20px;
+        }
+
+        .search-prompt {
+            width: 767px;
+            height: 64px;
+            position: absolute;
+            left: 15%;
+            top: 48%;
+            color: rgba(0, 0, 0, 0.31);
+            font-size: 40px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+        }
+
+        .icon-link {
+            font-size: 24px;
+            text-decoration: none;
+            color: black;
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            margin-right: 20px;
+        }
+
+        .cart-and-user-container {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            width: 25%;
+            top: 5%;
+            right: 5%;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            width: 25%;
+            top: 45%;
+            right: 5%;
+        }
+
+        .rate-link, .purchase-link {
+            position: absolute;
+            font-size: 40px;
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .rate-link {
+            color: #2622FF;
+            left: 20%;
+            top: 60%;
+        }
+
+        .purchase-link {
+            color: #D61313;
+            left: 50%;
+            top: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">사이트 제목</div>
+        <div class="search-box"></div>
+        <div class="search-prompt">검색어를 입력하세요</div>
+
+        <div class="cart-and-user-container">
+            <a href="/login" class="icon-link">로그인(임시)</a>
+            <a href="/cart" class="icon-link">장바구니</a>
+            <a href="/profile" class="icon-link">사용자</a>
+        </div>
+
+        <div class="icon-container">
+            <a href="/image" class="icon-link">이미지</a>
+            <a href="/search" class="icon-link">돋보기</a>
+        </div>
+        
+        <a href="/exchangeRate" class="rate-link">오늘의 환율</a>
+        <a href="/purchaseInfo" class="purchase-link">해외 판매처 구매방법</a>
+    </div>
+</body>
+</html>
