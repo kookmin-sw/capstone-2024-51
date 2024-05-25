@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }} 상세 정보</title>
+</head>
+<body>
+<h1>{{ product.name }} 상세 정보</h1>
+<h2>공급처 목록</h2>
+<ul>
+    {% for supplier in product['suppliers'] %}
+    <li>{{ supplier['name'] }}: {{ supplier['price'] }}원 - <a href="javascript:void(0);" onclick="redirectToSupplier('{{ supplier['link'] }}')">구매하기</a></li>
+    {% endfor %}
+</ul>
+
+<a href="javascript:history.back()">제품 목록으로 돌아가기</a>
+</body>
+</html>

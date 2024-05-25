@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>검색 결과</title>
+</head>
+<body>
+    <h1>'{{ query }}'에 대한 검색 결과</h1>
+    <form action="/search" method="get">
+        <input type="hidden" name="query" value="{{ query }}">
+        <select name="sort" onchange="this.form.submit()">
+            <option value="asc" {% if request.args.get('sort') == 'asc' %}selected{% endif %}>가격 낮은순</option>
+            <option value="desc" {% if request.args.get('sort') == 'desc' %}selected{% endif %}>가격 높은순</option>
+        </select>
+    </form>
+
+    {% if results %}
+    <ul>
+        {% for product in results %}
+            <li>
+                <img src="{{ product['image'] }}" alt="{{ product['name'] }}">
+                <strong><a href="/product/{{ product['id'] }}">{{ product['name'] }}</a></strong> - 시작 가격: {{ product['suppliers'][0]['price'] }}원
+                <p>{{ product['description'] }}</p>
+                <a href="/redirect_to_supplier/{{ product['suppliers'][0]['link'] }}">최저가 바로구매</a>
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>검색 결과가 없습니다.</p>
+    {% endif %}
+
+    <a href="/">다시 검색</a>
+</body>
+</html>

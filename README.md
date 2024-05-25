@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/omXkVCQu)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15029291&assignment_repo_type=AssignmentRepo)
 # Welcome to GitHub
 
 캡스톤 팀 생성을 축하합니다.
@@ -17,16 +19,16 @@
   - Theme Chooser에서 태마선택
   - 수정후 팀페이지 확인하여 점검.
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
-
-**예시)** 2023년 0조  https://kookmin-sw.github.io/capstone-2023-00/
+**팀페이지 주소** -> 2024년 51조 https://github.com/kookmin-sw/capstone-2024-51
 
 
 ## 내용에 아래와 같은 내용들을 추가하세요.
 
 ### 1. 프로잭트 소개
 
-프로젝트
+가격 비교 사이트입니다.
+국내의 가격 비교 사이트(다나와, 에누리) 등에서는 국내 판매처만의 가격 비교를 제공하고 있습니다.
+제가 제작하려는 가격 비교 사이트에서는 같은 물품에 대한 국내 판매처에 더해 해외 판매처(Taobao, Amazon, Yahoo auction 등)와의 비교를 통해 가장 낮은 가격으로 파는 판매처를 찾아보려 합니다.
 
 ### 2. 소개 영상
 
@@ -34,9 +36,7 @@
 
 ### 3. 팀 소개
 
-팀을 소개하세요.
-
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
+팀원 정보: 20171634 성예린
 
 ### 4. 사용법
 
